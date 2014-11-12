@@ -3,6 +3,7 @@
 ;; Author: Steven Rémot <steven.remot@gmail.com>
 ;; Version: 0.1
 ;; Keywords: svn
+;; Homepage: https://github.com/stevenremot/svn-multi-commit.el
 
 ;;; License:
 
