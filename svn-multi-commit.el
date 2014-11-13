@@ -1,7 +1,7 @@
 ;;; svn-multi-commit.el --- Simple command to handle commit on multiple SVN branches at the same time
 
 ;; Author: Steven Rémot <steven.remot@gmail.com>
-;; Version: 0.1.1
+;; Version: 0.1.2
 ;; Keywords: svn
 ;; Homepage: https://github.com/stevenremot/svn-multi-commit.el
 
@@ -88,7 +88,7 @@ Then you can enter a commit message in the mini buffer."
     (when (yes-or-no-p "Do you want to do a commit with these files? ")
       (let* ((message (read-from-minibuffer "Commit message: " svn-multi-commit-template))
              (args (append (list "ci"  "-m" message) svn-multi-commit--files)))
-        (apply 'start-process "ubeeqo-svn-ci" "*ubeeqo-svn-ci*" "svn" args)
+        (apply 'start-process "svn-multi-ci" "*ubeeqo-svn-ci*" "svn" args)
         (svn-multi-commit-reset)))))
 
 
