@@ -1,7 +1,7 @@
 ;;; svn-multi-commit.el --- Simple command to handle commit on multiple SVN branches at the same time
 
 ;; Author: Steven Rémot <steven.remot@gmail.com>
-;; Version: 0.1.2
+;; Version: 0.2.0
 ;; Keywords: svn
 ;; Homepage: https://github.com/stevenremot/svn-multi-commit.el
 
