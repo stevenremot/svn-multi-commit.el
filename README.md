@@ -13,8 +13,7 @@ In each branch's vc-mode, mark the files you want to commit and run
 When you have added all your file to the commit list, run `M-x
 svn-multi-commit-do`.
 
-You will be asked to confirme you want to commit *these* files, And
-then you can enter your commit message.
+A new buffer will open to write your commit message. Hit `C-c C-c` to commit when you are done, or `C-c C-k` to cancel the commit.
 
 ## License
 
