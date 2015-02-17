@@ -61,7 +61,7 @@
   "Add the selected files to commit in mode `vc-mode'."
   (interactive)
   (dolist (f (vc-dir-marked-files))
-    (when (member (vc-state f) '(edited added))
+    (when (member (vc-call-backend 'SVN 'state f) '(edited added removed))
       (message "Added %s to commit." f)
       (add-to-list 'svn-multi-commit--files f))))
 
